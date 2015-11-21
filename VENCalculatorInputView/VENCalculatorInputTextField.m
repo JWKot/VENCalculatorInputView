@@ -24,16 +24,16 @@
 - (void)setUpInit {
     self.locale = [NSLocale currentLocale];
     self.currencyString = @"";
-
+    
     VENCalculatorInputView *inputView = [VENCalculatorInputView new];
     inputView.delegate = self;
     inputView.locale = self.locale;
     self.inputView = inputView;
-
+    
     VENMoneyCalculator *moneyCalculator = [VENMoneyCalculator new];
     moneyCalculator.locale = self.locale;
     self.moneyCalculator = moneyCalculator;
-
+    
     [self addTarget:self action:@selector(venCalculatorTextFieldDidEndEditing) forControlEvents:UIControlEventEditingDidEnd];
 }
 
@@ -68,7 +68,10 @@
             return;
         }
     }
-    [self removeNumberOfCharactersAtEnd:(int)self.currencyString.length];
+    //Check, if currencyString has been added before:
+    if([[self.text substringFromIndex:self.text.length - self.currencyString.length] isEqualToString:self.currencyString]){
+        [self removeNumberOfCharactersAtEnd:(int)self.currencyString.length];
+    }
     
     [self insertText:key];
     NSString *subString = [self.text substringToIndex:self.text.length - 1];

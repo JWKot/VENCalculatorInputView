@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -13,6 +13,7 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x27-vp-6DR">
                     <rect key="frame" x="0.0" y="0.0" width="59" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Divide"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="÷">
@@ -24,6 +25,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUR-3U-wcK">
                     <rect key="frame" x="59" y="0.0" width="87" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="One"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="1">
@@ -35,6 +37,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JV6-sY-Ogr">
                     <rect key="frame" x="59" y="54" width="87" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Four"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="4">
@@ -46,6 +49,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYZ-Lf-J5j">
                     <rect key="frame" x="59" y="108" width="87" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Seven"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="7">
@@ -57,6 +61,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYd-gM-or0">
                     <rect key="frame" x="59" y="162" width="87" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Decimal point"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title=".">
@@ -68,6 +73,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wf7-xV-pka">
                     <rect key="frame" x="146" y="0.0" width="87" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Two"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="2">
@@ -79,6 +85,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZC-sL-jHO">
                     <rect key="frame" x="146" y="54" width="87" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Five"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="5">
@@ -90,6 +97,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9h-WF-taO">
                     <rect key="frame" x="146" y="108" width="87" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Eight"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="8">
@@ -101,6 +109,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ty-om-JCT">
                     <rect key="frame" x="146" y="162" width="87" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Zero"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="0">
@@ -112,6 +121,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9B-4z-Rq4">
                     <rect key="frame" x="233" y="0.0" width="87" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Three"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="3">
@@ -123,6 +133,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMP-0C-Anz">
                     <rect key="frame" x="233" y="54" width="87" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Six"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="6">
@@ -134,6 +145,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjs-Bi-wiF">
                     <rect key="frame" x="233" y="162" width="87" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Backspace"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" image="VENCalculatorIconBackspace.png">
@@ -145,6 +157,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nS1-xf-Wd3">
                     <rect key="frame" x="0.0" y="54" width="59" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Multiply"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="×">
@@ -156,6 +169,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVG-Mb-OFf">
                     <rect key="frame" x="0.0" y="108" width="59" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Subtract"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="−">
@@ -167,6 +181,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE3-xD-kgf">
                     <rect key="frame" x="0.0" y="162" width="59" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Add"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="+">
@@ -178,6 +193,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJe-DO-RoA">
                     <rect key="frame" x="233" y="108" width="87" height="54"/>
+                    <animations/>
                     <accessibility key="accessibilityConfiguration" label="Nine"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                     <state key="normal" title="9">
@@ -188,6 +204,7 @@
                     </connections>
                 </button>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="K9B-4z-Rq4" firstAttribute="top" secondItem="1" secondAttribute="top" id="0aG-0V-nbU"/>
@@ -291,9 +308,4 @@
     <resources>
         <image name="VENCalculatorIconBackspace.png" width="25" height="26"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
