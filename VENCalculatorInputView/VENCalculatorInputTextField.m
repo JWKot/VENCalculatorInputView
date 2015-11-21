@@ -4,6 +4,7 @@
 
 @interface VENCalculatorInputTextField ()
 @property (strong, nonatomic) VENMoneyCalculator *moneyCalculator;
+@property (strong, nonatomic) NSString *currencyString;
 @end
 
 @implementation VENCalculatorInputTextField
@@ -22,6 +23,7 @@
 
 - (void)setUpInit {
     self.locale = [NSLocale currentLocale];
+    self.currencyString = @"";
 
     VENCalculatorInputView *inputView = [VENCalculatorInputView new];
     inputView.delegate = self;
@@ -66,7 +68,8 @@
             return;
         }
     }
-
+    [self removeNumberOfCharactersAtEnd:(int)self.currencyString.length];
+    
     [self insertText:key];
     NSString *subString = [self.text substringToIndex:self.text.length - 1];
     if ([key isEqualToString:@"+"] ||
@@ -85,6 +88,11 @@
             self.text = subString;
         }
     }
+    
+    //Append CurrencyString to text in TextField
+    NSMutableString* selfString = [[NSMutableString alloc] initWithString:self.text];
+    [selfString appendString:self.currencyString];
+    self.text = selfString;
 }
 
 - (void)calculatorInputViewDidTapBackspace:(VENCalculatorInputView *)calculatorInputView {
@@ -119,6 +127,12 @@
 
 - (NSString *)decimalSeparator {
     return [self.locale objectForKey:NSLocaleDecimalSeparator];
+}
+
+- (void)removeNumberOfCharactersAtEnd:(int)numberOfCharacters{
+    NSString *text = self.text;
+    NSString *newString = [text substringToIndex:[text length]-numberOfCharacters];
+    self.text=newString;
 }
 
 @end
