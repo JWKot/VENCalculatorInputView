@@ -69,7 +69,7 @@
         }
     }
     //Check, if currencyString has been added before:
-    if([[self.text substringFromIndex:self.text.length - self.currencyString.length] isEqualToString:self.currencyString]){
+    if(self.text.length >= self.currencyString.length && [[self.text substringFromIndex:self.text.length - self.currencyString.length] isEqualToString:self.currencyString]){
         [self removeNumberOfCharactersAtEnd:(int)self.currencyString.length];
     }
     
