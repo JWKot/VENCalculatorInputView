@@ -55,6 +55,7 @@
     NSString *evaluatedString = [self.moneyCalculator evaluateExpression:textToEvaluate];
     if (evaluatedString) {
         self.text = evaluatedString;
+        [self appendCurrencyString];
     }
 }
 
@@ -92,10 +93,7 @@
         }
     }
     
-    //Append CurrencyString to text in TextField
-    NSMutableString* selfString = [[NSMutableString alloc] initWithString:self.text];
-    [selfString appendString:self.currencyString];
-    self.text = selfString;
+    [self appendCurrencyString];
 }
 
 - (void)calculatorInputViewDidTapBackspace:(VENCalculatorInputView *)calculatorInputView {
@@ -136,6 +134,13 @@
     NSString *text = self.text;
     NSString *newString = [text substringToIndex:[text length]-numberOfCharacters];
     self.text=newString;
+}
+
+- (void)appendCurrencyString{
+    //Append CurrencyString to text in TextField
+    NSMutableString* selfString = [[NSMutableString alloc] initWithString:self.text];
+    [selfString appendString:self.currencyString];
+    self.text = selfString;
 }
 
 @end
