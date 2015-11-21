@@ -8,5 +8,6 @@
  Defaults to locale for current device.
  */
 @property (strong, nonatomic) NSLocale *locale;
+@property (strong, nonatomic) NSString *currencyString;
 
 @end

@@ -4,7 +4,7 @@
 
 @interface VENCalculatorInputTextField ()
 @property (strong, nonatomic) VENMoneyCalculator *moneyCalculator;
-@property (strong, nonatomic) NSString *currencyString;
+
 @end
 
 @implementation VENCalculatorInputTextField
